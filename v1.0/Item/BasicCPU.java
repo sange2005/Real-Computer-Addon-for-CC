@@ -7,8 +7,8 @@ import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
  
-@Mod(modid=SampleItemCore.MOD_ID, name="Basic CPU (Intel)", version="1.0")
-public class BasicCPU
+@Mod(modid=SampleItemCore.MOD_ID, name="BasicCPU", version="1.0")
+public class itemsample
 {
         public static final String MOD_ID = "BasicCPU";
 	public static Item BasicCPU;
@@ -29,6 +29,6 @@ public class BasicCPU
 		/*.setNoRepair()*//*修理レシピを削除し、金床での修繕を出来なくする*/
 		.setMaxStackSize(64);/*スタックできる量。デフォルト64*/
 		//アイテムの登録。登録文字列はMOD内で被らなければ何でも良い。
-		GameRegistry.registerItem(BasicCPU "Basic CPU");
+		GameRegistry.registerItem(BasicCPU "BasicCPU");
 	}
 }
